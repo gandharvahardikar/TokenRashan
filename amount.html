@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ration Card Selection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #ration-form {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+            position: relative;
+        }
+
+        label {
+            display: block;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        label input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        #amount {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        #next-button {
+            padding: 10px 20px;
+            background-color: #0072b5;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 140px;
+        }
+
+        #next-button:hover {
+            background-color: #00568e;
+        }
+
+        /* Style for the selected (checked) radio button */
+        label input[type="radio"]:checked {
+            color: #0072b5; /* Change the color to dark blue */
+        }
+    </style>
+</head>
+<body>
+    <form id="ration-form">
+        <h2>Your Ration Card Type</h2>
+        <label>
+            <input type="radio" name="ration" value="yellow" id="yellow-ration" checked="checked" disabled>
+            Yellow Ration Card (10 kg Wheat and 10 kg Rice)
+        </label><br>
+        <label>
+            <input type="radio" name="ration" value="saffron" id="saffron-ration" disabled>
+            Saffron Ration Card (10 kg Wheat and 10 kg Rice)
+        </label><br>
+        <label>
+            <input type="radio" name="ration" value="white" id="white-ration" disabled>
+            White Ration Card (10 kg Wheat and 10 kg Rice)
+        </label><br>
+
+        <h2>Amount:</h2>
+        <input type="text" id="amount" value="10 kg Wheat and 10 kg Rice" readonly>
+        
+        <button type="button" id="next-button">Next</button>
+    </form>
+
+    <script>
+        // JavaScript to handle the button click and redirect
+        document.getElementById("next-button").addEventListener("click", function() {
+            // Replace 'your_desired_url_here' with the actual URL you want to open.
+            window.location.href = 'http://localhost:3000';
+        });
+    </script>
+</body>
+</html>
