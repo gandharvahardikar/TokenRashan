@@ -1,3 +1,6 @@
+Contributors - Gandharva Hardikar, Ishan Sangani
+
+
 Project Overview:
 RationChain is a Blockchain-based E-Token QR Ration Distribution System aimed at improving transparency, reducing fraud, and streamlining the Public Distribution System (PDS) in India.
 
